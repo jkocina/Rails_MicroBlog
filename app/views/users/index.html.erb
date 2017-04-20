@@ -1,0 +1,12 @@
+<% provide(:title, 'All users') %>
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+<ul class="users">
+  <!-- this will automatically iterate on the users variable, calling the partial
+       on each.  -->
+  <%= render @users %>
+</ul>
+
+<%= will_paginate %>
